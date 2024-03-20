@@ -44,7 +44,7 @@ public class MathTester {
     private static Random rand = new Random();
     private static String currentTask;
     private static int currentResult;
-    private static final int amountPanels = 4;
+    private final static int amountPanels = 4;
     private static List<Color> colors = Arrays.asList(Color.WHITE, Color.GREEN, Color.YELLOW, Color.RED);
     private static int currentMode = 1;
 
