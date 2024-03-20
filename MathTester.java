@@ -47,7 +47,6 @@ public class MathTester {
     private static final int amountPanels = 4;
     private static List<Color> colors = Arrays.asList(Color.WHITE, Color.GREEN, Color.YELLOW, Color.RED);
     private static int currentMode = 1;
-    private static List<String> comp;
 
     public static void GUI() {
 
@@ -121,7 +120,7 @@ public class MathTester {
 
         submitButton.addActionListener(new ActionListener() {
             public void actionPerformed(final ActionEvent e) {
-                comp = compareResult(entry.getText());
+                List<String> comp = compareResult(entry.getText());
                 calcLabel.setText(comp.get(0));
                 outputLabel.setText(comp.get(1));
                 entry.setText("");
